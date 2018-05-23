@@ -1,0 +1,6 @@
+alias O.o="help"
+alias py3="python3"
+alias py2="python2"
+alias sgi="sudo apt-get install"
+alias sgp="sudo apt-get purge"
+alias snpm="sudo npm" 
