@@ -1,6 +1,10 @@
 export TERM="xterm-256color"
 
 # If you come from bash you might have to change your $PATH.
+NPM_PACKAGES="${HOME}/.npm"
+export NODE_PATH=$NPM_PACKAGES/lib/node_modules:$NODE_PATH
+export PATH=$PATH:$HOME/bin:/home/jenni/.gem/ruby/*/bin:/var/lib/snapd/snap/bin:$NPM_PACKAGES/bin
+export MANPATH=$NPM_PACKAGES/share/man:$MANPATH
 export SUDO_EDITOR=rvim
 # Path to your oh-my-zsh installation.
 export ZSH=/home/susw12/.oh-my-zsh
@@ -248,11 +252,4 @@ mtenc() {
 
 #fi
 
-alias wttr='curl wttr.in/Gaithersburg, MD\?m'
-
-alias pvpn='sudo protonvpn-cli'
-
-if [ -f ~/.zsh_aliases ]; then
-    . ~/.zsh_aliases
-fi
-
+alias wttr='curl wttr.in/New_York\?m'
